@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+  
+    
+<LinearLayout 
+android:orientation="horizontal" 
+android:layout_height="wrap_content" 
+android:layout_width="match_parent">
+
+<TextView 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:textColor="#000000" 
+    android:textSize="20sp" 
+    android:text="起点经度:" 
+    android:gravity="center"/>
+
+<EditText 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:inputType="numberDecimal" 
+    android:hint="请输入经度" 
+    android:id="@+id/longitudeAEditText"/>
+
+</LinearLayout>
+
+
+<LinearLayout 
+    android:orientation="horizontal" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent">
+
+<TextView 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:textColor="#000000" 
+    android:textSize="20sp" 
+    android:text="起点纬度:"
+     android:gravity="center"/>
+
+<EditText 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:inputType="numberDecimal" 
+    android:hint="请输入纬度" 
+    android:id="@+id/latitudeAEditText"/>
+
+</LinearLayout>
+
+
+<LinearLayout
+     android:orientation="horizontal"
+      android:layout_height="wrap_content" 
+      android:layout_width="match_parent" 
+      android:layout_marginTop="40dp">
+
+<TextView 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:textColor="#000000" 
+    android:textSize="20sp" 
+    android:text="终点经度:" 
+    android:gravity="center"/>
+
+<EditText
+     android:layout_height="wrap_content" 
+     android:layout_width="fill_parent"
+      android:inputType="numberDecimal" 
+      android:hint="请输入经度" 
+      android:id="@+id/longitudeBEditText"/>
+
+
+</LinearLayout>
+
+
+<LinearLayout
+     android:orientation="horizontal"
+      android:layout_height="wrap_content"
+       android:layout_width="match_parent">
+
+<TextView 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:textColor="#000000"
+     android:textSize="20sp" 
+     android:text="终点纬度:" 
+     android:gravity="center"/>
+
+<EditText
+     android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+       android:inputType="numberDecimal"
+        android:hint="请输入纬度"
+         android:id="@+id/latitudeBEditText"/>
+
+</LinearLayout>
+
+</LinearLayout>

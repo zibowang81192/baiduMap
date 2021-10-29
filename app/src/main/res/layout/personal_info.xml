@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 姓名及其输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+
+        <!-- 账号及其输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/accountEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+        <!-- 手机及其输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+        
+        <!-- 邮箱及其输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+        <!-- 生日及其输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生日:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/birthdayEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+        <!-- 籍贯及其输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="籍贯:"
+                android:textSize="20sp" />
+
+             <EditText
+                android:id="@+id/birthplaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+             
+        </LinearLayout>
+
+        <!-- 兴趣及其输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兴趣:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/favourEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+        <!-- 自我介绍及其输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自我介绍:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/introductionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

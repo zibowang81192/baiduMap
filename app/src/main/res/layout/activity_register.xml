@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+<LinearLayout
+        android:orientation="vertical"
+              android:background="#9dd8e3"
+              android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:textColor="@color/colorloginText"
+            android:text="用户注册"
+            android:textSize="30sp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="姓        名:"
+                  android:layout_marginRight="10dp"
+                  android:textColor="@color/colorloginText"
+                  android:textSize="20sp">
+        </TextView>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/registerNameText"
+                  android:hint="请输入姓名"
+
+                  android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="账        号:"
+                  android:layout_marginRight="10dp"
+                  android:textColor="@color/colorloginText"
+                  android:textSize="20sp">
+        </TextView>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/registerAccountText"
+                  android:hint="请输入账号"
+
+                  android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="20dp"
+                                 android:orientation="horizontal">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="密        码:"
+              android:layout_marginRight="10dp"
+              android:textColor="@color/colorloginText"
+              android:textSize="20sp">
+    </TextView>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/registerPasswordText"
+              android:inputType="textPassword"
+              android:hint="请输入密码"
+              android:textSize="20sp">
+    </EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="重复密码:"
+                  android:layout_marginRight="10dp"
+                  android:textColor="@color/colorloginText"
+
+                  android:textSize="20sp">
+        </TextView>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textPassword"
+                  android:hint="请输入重复密码"
+                  android:id="@+id/registerRepasswordText"
+                  android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="性        别:"
+                  android:layout_marginRight="50dp"
+                  android:textColor="@color/colorloginText"
+                  android:textSize="20sp">
+        </TextView>
+        <RadioGroup android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registerGender"
+                    android:orientation="horizontal">
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="男"
+                         android:textSize="20dp"
+                         android:checked="true"
+                         android:id="@+id/maleButton"
+                         android:layout_marginRight="50dp">
+
+            </RadioButton>
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textSize="20dp"
+                         android:id="@+id/femaleButton"
+                         android:text="女">
+
+            </RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="生         日:"
+                  android:layout_marginRight="10dp"
+                  android:textColor="@color/colorloginText"
+                  android:textSize="20sp">
+        </TextView>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/registerBirthday"
+                  android:hint="请输入生日"
+                  android:editable="false"
+                  android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="籍        贯:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+            <Spinner
+                    android:id="@+id/provinceSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/middleLineTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:visibility="invisible"/>
+
+            <Spinner
+                    android:id="@+id/citySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="手         机:"
+                  android:layout_marginRight="10dp"
+                  android:textColor="@color/colorloginText"
+                  android:textSize="20sp">
+        </TextView>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/registerPhoneNumber"
+                  android:hint="请输入手机号码"
+
+                  android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="邮         箱:"
+                  android:layout_marginRight="10dp"
+                  android:textColor="@color/colorloginText"
+                  android:textSize="20sp">
+        </TextView>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/registerEmail"
+                  android:hint="请输入邮箱地址"
+
+                  android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="兴         趣:"
+                  android:layout_marginRight="10dp"
+                  android:textColor="@color/colorloginText"
+                  android:textSize="20sp">
+        </TextView>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/registerHobby"
+                  android:hint="请输入兴趣爱好"
+                  android:editable="false"
+                  android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="自我介绍:"
+                  android:layout_marginRight="10dp"
+                  android:textColor="@color/colorloginText"
+                  android:layout_marginBottom="20dp"
+                  android:textSize="20sp">
+        </TextView>
+        <EditText
+                android:id="@+id/selfIntroduction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:background="@android:drawable/edit_text"
+                android:hint="随便写点什么吧"
+        >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="40dp"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+        <Button   android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/registerregisterButton"
+                  android:text="注册"
+                  android:textColor="@color/colorloginText"/>
+        <Button   android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/cancelButton"
+                  android:layout_marginLeft="20dp"
+                  android:text="取消"
+                  android:textColor="@color/colorloginText"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
